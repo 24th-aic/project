@@ -1,0 +1,41 @@
+*{
+    font-family:Palatino;
+    
+}
+
+ body{
+        margin:0%;
+        padding:0%;
+        background: lightblue;
+    
+    }
+
+table{
+    margin: 2% auto;
+    width: 90%;
+
+}
+#agent{
+    background:rgb(255, 189, 89);
+	color: white;
+    outline: none;
+    border: none;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+#agent:hover{
+	opacity: 0.8;
+	
+}
+td #delete{
+	background:rgb(243, 114, 114);
+    border: none;
+    padding: 5px;
+	color: white;
+    outline: none;
+    border-radius: 3px;
+}td #delete:hover{
+	opacity: 0.8;
+	
+}

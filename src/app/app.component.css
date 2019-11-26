@@ -1,0 +1,30 @@
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  
+}li {
+    float: left;
+  
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li span{
+	display:block;
+	text-align:center;
+	padding:14px 16px;
+	cursor:default;
+}li .report:hover, li .dashboard:hover{
+	background-color: #666;
+	border-bottom:5px solid #5BC0DE;
+	height:52px;
+}

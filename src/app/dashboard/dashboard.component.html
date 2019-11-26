@@ -1,0 +1,28 @@
+<body style="width: 100%; height: 91.5%; position:absolute; overflow: hidden;">
+     
+
+    <table class="table">
+        <thead>
+            <tr  style="background:grey; text-align:center; color: white;">
+                    <th>Id</th>
+                    <th>Username</th>
+                    <th>Game</th>
+                    <th>Report</th>
+                    <th>Action</th>
+            </tr>
+        </thead>
+        <tbody style="background: white;">
+            <tr *ngFor="let report of reports" style="text-align: center;">
+                    <td>{{report._id}}</td>
+                    <td>{{report.username}}</td>
+                    <td>{{report.game}}</td>
+                    <td>{{report.report}}</td>
+                    <td>
+                        <button id="agent" (click)="addAgent()">Add Agent</button>
+                        <button id="delete" (click)="deleteReports(report._id)">Delete</button>
+                    </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>

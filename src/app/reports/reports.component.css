@@ -1,0 +1,123 @@
+*{
+    font-family:Palatino;
+}
+body{
+    margin:0%;
+	padding:0%;
+	background: lightblue;
+
+}
+h5{
+	font-size:25px;
+}
+.tbl{
+	width: 55rem;
+	position: relative;
+	margin-left: 24.5rem;
+	bottom: 34.5rem;
+}
+h3{
+	margin:0;
+	padding:0;
+	color:white;
+	text-transform: uppercase;
+	font-size:36px;
+}
+.container{
+	width:30%;
+	height:550px;
+	margin: 0.3% 0.1%;
+	border: 1px solid white;
+	background:rgba(0,0,0,0.5);
+	border-radius:5px;
+}
+tr th{
+	background: grey;
+	color: white;
+}
+.left .p{
+	color:white;
+    text-align:center;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.container .left{
+	margin: 0 auto;
+	width:100%;
+	height:400px;
+	box-sizing:border-box;
+}
+
+.form{
+	width: 100%;
+	padding: 0px 40px;
+	box-sizing: border-box;
+	height: 400px;
+
+}.form p{
+	margin:0;
+	padding:0;
+	font-weight:bold;
+	color:white;
+	margin-bottom:3px;
+}
+.form input, .form button{
+	margin-bottom:20px;
+	width:100%;
+}
+.form input[type="text"], .form input[type="password"], .form button{
+	height:40px;
+	border-radius:3px;
+	border:none;
+}.form input[type="text"]:focus, .form input[type="password"]:focus{
+	outline:none;
+	transition:0.5s;
+	box-shadow: 0px 0px 15px white;
+}
+.form button[type="submit"]{
+	border-radius:3px;
+	transition:0.2s;
+	border:none;
+	outline:none;
+	height:40px;
+	color:#fff;
+	background:limegreen;
+	cursor:pointer;
+	margin-top: 1rem;
+}
+.form button[type="submit"]:hover{
+	opacity: 0.7;
+	transition:0.2s;
+}
+td button{
+	border: none;
+	height: 2rem;
+	border-radius: 3px;
+	margin-left: 5px;
+}
+td #delete{
+	background:rgb(243, 114, 114);
+
+	color: white;
+	outline: none;
+}td #delete:hover{
+	opacity: 0.8;
+	
+}
+td #update{
+	background:rgb(255, 189, 89);
+	color: white;
+	outline: none;
+}td #update:hover{
+	opacity: 0.8;
+	
+}
+.my-custom-scrollbar {
+    position: relative;
+    height: 540px;
+    overflow: auto;
+}
+.table-wrapper-scroll-y {
+    display: block;
+}

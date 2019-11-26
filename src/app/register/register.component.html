@@ -1,0 +1,55 @@
+<body style="width: 100%; height: 100%; position:absolute; overflow: hidden;">
+<div class="container">
+    <div class="left">
+        <div class="form">
+            <p class="p">REGISTER</p>
+                <form (submit)="addUsers()">
+                    <input type="text" name="Username" [(ngModel)]="Username" #name="ngModel" placeholder=" Name" required
+                        [class.invalid]="name.invalid && name.touched">
+                        
+                    <input type="number" min="0" name="Userage" [(ngModel)]="Userage" #age="ngModel" placeholder=" Age" required
+                        [class.invalid]="age.invalid && age.touched">
+               
+                    <input type="text" name="Useraddress" [(ngModel)]="Useraddress" #address="ngModel" placeholder=" Address" required
+                        [class.invalid]="address.invalid && address.touched">
+
+                    <input type="text"  name="Usergender" [(ngModel)]="Usergender" #gender="ngModel" placeholder=" Gender" required
+                        [class.invalid]="gender.invalid && gender.touched">
+                    
+                    <input type="text"  name="Uname" [(ngModel)]="Uname" #uname="ngModel" placeholder=" Username" required
+                        [class.invalid]="uname.invalid && uname.touched">
+
+                    <input type="password"  name="Userpass" [(ngModel)]="Userpass" #pword="ngModel" placeholder=" Password" required
+                        [class.invalid]="pword.invalid && pword.touched">
+
+                    <button type="submit" name="submitBtn" [disabled]="name.invalid || age.invalid || address.invalid
+                        || gender.invalid || uname.invalid || pword.invalid" >Register</button>
+                        
+                </form>
+                     
+        </div>
+    </div>
+</div> 
+
+<!-- <table class="table w-50">
+    <thead class="thead-light ">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th>Action</th>
+                </tr>
+    </thead>
+        <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user._id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.username}}</td>
+			<td><button (click)="updateUsers(user._id)" >Update</button>
+                <button  (click)="deleteUsers(user._id)">Delete</button></td>
+        </tr>
+         </tbody>
+</table> 
+ -->
+
+</body>

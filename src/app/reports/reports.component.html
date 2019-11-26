@@ -1,0 +1,58 @@
+<body style="width: 100%; height: 91.5%; position:absolute; overflow: hidden;">
+
+    <div class="container">
+       <div class="left">
+           <div class="form">
+               <p class="p">REPORTS</p>
+                   <form (submit)="addReports()">
+						<p>Username</p>
+                           <input type="text" name="username" [(ngModel)]="username" #uname="ngModel" placeholder="Username" required
+							[class.invalid]="gname.invalid && gname.touched">
+							
+						<p>Game</p>
+                           <input type="text" name="game" [(ngModel)]="game" #gname="ngModel" placeholder="Game" required
+							[class.invalid]="gname.invalid && gname.touched">
+							
+						<p>Report</p>
+                           <input type="text"  name="report" [(ngModel)]="report" #greport="ngModel" placeholder="Report" required
+							[class.invalid]="greport.invalid && greport.touched">
+                           
+						<button type="submit" class="register" [disabled]="gname.invalid || greport.invalid">Submit Report</button>
+                   </form>
+                        
+           </div>
+       </div>
+    
+   </div> 
+<div class="tbl">
+    <div class="table-wrapper-scroll-y my-custom-scrollbar ">
+     <table class="table table-striped bg-light">
+    <thead>
+        <tr style="text-align: center;">
+            <th>Id</th>
+            <th>Username</th>
+            <th>Game</th>
+            <th>Report</th>
+            <th>Action</th>
+           
+        </tr>
+    </thead>
+    <tbody style="text-align: center;">
+        <tr *ngFor="let report of reports">
+            <td>{{report._id}}</td>
+            <td>{{report.username}}</td>
+            <td>{{report.game}}</td>
+            <td>{{report.report}}</td>
+            <td>
+                    <!-- (click)="updateReports(report._id)" -->
+                <button id="update" data-toggle="modal" data-target="#myModal" (click)="updateReports(report._id)">Update</button>
+                <button id="delete" (click)="deleteReports(report._id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+    </div>
+</div>
+
+  
+</body>
